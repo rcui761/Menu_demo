@@ -143,7 +143,7 @@ body {
 .user-icon {
     margin-left: 50px;
     animation-delay: 0.25;
-    animation:user-animation 1s linear;
+    animation:user-animation 0.5s linear;
     animation-fill-mode: forwards;
     cursor: pointer;
   
@@ -181,7 +181,7 @@ body {
 .contact-icon {
     margin-left: 50px;
     animation-delay: 0.35;
-    animation:contact-animation 1s linear;
+    animation:contact-animation 0.5s linear;
     animation-fill-mode: forwards;
     cursor: pointer;
     border: 2px white solid;
@@ -216,7 +216,7 @@ body {
 .start-icon {
     margin-left: 50px;
     animation-delay: 0.45;
-    animation:start-animation 1s linear;
+    animation:start-animation 0.5s linear;
     animation-fill-mode: forwards;
     cursor: pointer;
     border: 2px white solid;
@@ -252,7 +252,7 @@ body {
 .message-icon {
     margin-left: 50px;
     animation-delay: 0.55;
-    animation:start-animation 1s linear;
+    animation:start-animation 0.5s linear;
     animation-fill-mode: forwards;
     cursor: pointer;
     border: 2px white solid;
@@ -289,7 +289,7 @@ body {
 .setting-icon {
     margin-left: 50px;
     animation-delay: 0.55;
-    animation:setting-animation 1s linear;
+    animation:setting-animation 0.5s linear;
     animation-fill-mode: forwards;
     cursor: pointer;
     border: 2px white solid;

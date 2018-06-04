@@ -15,7 +15,7 @@ export class InboxContainer extends Component{
         this.state = {
             inboxData: [],
             userData:{},
-            ifLeftOpen:false,
+            isLeftOpen:false,
         }
     } 
 
@@ -60,12 +60,13 @@ clickButton(){
     render(){
 
         const{inboxData,userData,isLeftOpen} = this.state;
+        console.log("------------"+ isLeftOpen);
         return (
             <div>
             <LeftNavBar userData = {userData} isLeftOpen = {isLeftOpen}/>
             <div className = {isLeftOpen ? "frame-right" : "frame-orgin"}>
-                <TopNavBar  isLeftOpen = {isLeftOpen} clickButtonCallBack={()=>this.clickButton()}/>
-                <InboxList  inboxData = {inboxData} isLeftOpen = {isLeftOpen}/>
+                <TopNavBar  isLeftOpen = {isLeftOpen}clickButtonCallBack={()=>this.clickButton()}/>
+                <InboxList  inboxData = {inboxData} />
             </div>
             
             </div>

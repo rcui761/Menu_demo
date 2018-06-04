@@ -7,13 +7,13 @@ import PropTypes from 'prop-types';
 export class TopNavBar extends Component{
     static propTypes = {
         clickButtonCallBack: PropTypes.func.isRequired,
-        isLeftOpen:PropTypes.bool.isRequired,
+       
     }
 
     clickButton(){
         
         this.props.clickButtonCallBack();
-        console.log(this.props.isLeftOpen);
+       
     }
     
     render() {

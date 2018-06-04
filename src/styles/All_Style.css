@@ -1,0 +1,31 @@
+body {
+    background-color: #405e73;
+}
+
+.top-nav {
+    overflow: hidden;
+    background-color: deepskyblue;
+    width: 100%;
+    opacity: 0.50;
+    height: 65px;
+    border-top-left-radius: 20px;
+    top: 0;
+    position: fixed;
+}
+
+.top-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.top-nav h2 {
+    color: #f2f2f2;
+    text-align: center;
+    display:block;
+
+}
+
+

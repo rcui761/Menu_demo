@@ -1,6 +1,8 @@
 body {
-    background-color: #405e73;
+    background-color:#405e73;
 }
+
+/* Styles for top header */
 
 .top-nav {
     overflow: hidden;
@@ -28,4 +30,59 @@ body {
 
 }
 
+/* styles for inbox list */
 
+.inbox-list-box {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: left;
+}
+
+.inbox-list-box ol, li, p, h5 {
+    margin: 0;
+}
+
+
+.inbox-list-box li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+
+.inbox-list-box p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-top: 15px;
+}
+
+.item-boxes {
+    display:table;
+    width: 100%;
+    height: 100%;
+    border-spacing: 12px;
+}
+
+.inbox-list-box .footer p {
+    text-align: justify;
+    color: gray;
+    vertical-align: middle;
+}
+
+.item-boxes .left-col{
+    display: table-cell;
+    width: 8%;
+}
+
+.item-boxes .left-col img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.item-boxes .right-col{
+    display: table-cell;
+    vertical-align:middle;
+}

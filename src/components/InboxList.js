@@ -12,65 +12,53 @@ export class InboxList extends Component {
 
     render() {
 
-        const {inboxData} = this.props;
-        
+        const { inboxData } = this.props;
+
         return (
             <div className='inbox-list-box'>
-                <div style={{
-                    marginLeft: '1%',
-                    width: '98%'
-                }}>
+                <div >
                     <ol>{
 
                         inboxData.map(
                             (value, index) => {
-                                
-                                                                    //console.log(value);
-                                
-                                                                    const {
-                                                                        first_name,
-                                                                        last_name,
-                                                                        comments,
-                                                                        create_date,
-                                                                        avatar
-                                                                    } = value;
-                                
-                                                                    const diff = moment().diff(moment(create_date), 'days', true);
-                                
-                                                                    const days = Math.round(diff);
-                                
-                                                                    return (
-                                
-                                                                        <li key={index}>
-                                                                            <div className={"item-boxes"}>
-                                                                                <div className={"left-col"}>
-                                                                                    <img alt=""
-                                                                                         src={avatar}
-                                                                                    />
-                                                                                </div>
-                                                                                <div className={"right-col"}>
-                                                                                    <h5>{first_name + " " + last_name}</h5>
-                                                                                    <p>
-                                                                                        {comments}
-                                                                                    </p>
-                                                                                    <div className={"footer"}>
-                                                                                        <p>
-                                                                                            <Ionicon
-                                                                                                icon="md-time"
-                                                                                                fontSize="20px"
-                                                                                                color="grey"
-                                                                                            />
-                                                                                            {days} ago.
-                                                                                        </p>
-                                                                                    </div>
-                                
-                                                                                </div>
-                                                                            </div>
-                                                                            <hr/>
-                                                                        </li>
-                                                                    )
-                                                                }
-                            
+                                //console.log(value);
+                                const {
+                                    first_name,
+                                    last_name,
+                                    comments,
+                                    create_date,
+                                    avatar
+                                    } = value;
+
+                                const diff = moment().diff(moment(create_date), 'days', true);
+                                const days = Math.round(diff);
+                                return (
+
+                                    <li key={index}>
+                                        <div className={"item-boxes"}>
+                                            <div className={"left-col"}>
+                                                <img  alt ='' src={avatar}/>
+                                            </div>
+                                            <div className={"right-col"}>
+                                                <h5>{first_name + " " + last_name}</h5>
+                                                <p>{comments}</p>
+                                                <div className={"footer"}>
+                                                    <p>
+                                                        <Ionicon
+                                                            icon="md-time"
+                                                            fontSize="20px"
+                                                            color="grey"
+                                                        />
+                                                        {days} ago.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr/>
+                                    </li>
+                                )
+                            }
+
                         )
                     }
 

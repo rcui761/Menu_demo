@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {LeftNavBar} from './LeftNavBar';
 import {InboxList} from './InboxList';
 import {TopNavBar} from './TopNavBar';

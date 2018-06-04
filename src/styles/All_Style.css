@@ -203,7 +203,7 @@ body {
 
 @keyframes start-animation{
     0%{
-        margin-top: 25px;
+        margin-top: 0px;
         opacity: 0;
     }
     100%{
@@ -250,7 +250,7 @@ body {
 .message-icon {
     margin-left: 50px;
     animation-delay: 0.55;
-    animation:start-animation 0.5s linear;
+    animation:message-animation 0.5s linear;
     animation-fill-mode: forwards;
     border: 2px white solid;
     width: 70px;

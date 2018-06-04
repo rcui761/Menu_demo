@@ -46,7 +46,7 @@ export class InboxList extends Component {
                                                     <p>
                                                         <Ionicon
                                                             icon="md-time"
-                                                            fontSize="20px"
+                                                            fontSize="17px"
                                                             color="grey"
                                                         />
                                                         {days} ago.

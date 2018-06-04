@@ -30,7 +30,7 @@ body {
 
 }
 
-/* styles for inbox list */
+/* Styles for inbox list */
 
 .inbox-list-box {
     background-color: white;
@@ -85,4 +85,31 @@ body {
 .item-boxes .right-col{
     display: table-cell;
     vertical-align:middle;
+}
+
+/* Styles for left frame change*/
+.frame-right{
+    transition: 0.25s;
+    transform: scale(0.98,0.98);
+    margin-left:20%
+    
+}
+
+.frame-orgin{
+    transition: 0.25s;
+    transform:scale(1,1)
+  
+}
+
+.nav-right{
+    background-color: #405e73;
+    width: 0;
+    transition: 0.25s;
+
+}
+
+.nav-origin{
+    background-color: #405e73;
+    width: 20%;
+    transition: 0.25s;
 }

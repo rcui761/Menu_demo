@@ -50,18 +50,22 @@ fetchUserData(){
     .catch(error => console.log(error))
 }
 
-
-
+clickButton(){
+    const{isLeftOpen} = this.state;
+    this.setState({
+        isLeftOpen: !isLeftOpen,
+    })
+}
 
     render(){
 
-        const{inboxData} = this.state;
+        const{inboxData,userData,isLeftOpen} = this.state;
         return (
             <div>
-            <LeftNavBar/>
-            <div>
-                <TopNavBar/>
-                <InboxList  inboxData = {inboxData} />
+            <LeftNavBar userData = {userData} ifLeftOpen = {isLeftOpen}/>
+            <div className = {isLeftOpen ? "frame-right" : "frame-orgin"}>
+                <TopNavBar  isLeftOpen clickButtonCallBack={()=>this.clickButton()}/>
+                <InboxList  inboxData = {inboxData} isLeftOpen = {isLeftOpen}/>
             </div>
             
             </div>

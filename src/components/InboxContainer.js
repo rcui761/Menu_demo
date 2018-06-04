@@ -62,9 +62,9 @@ clickButton(){
         const{inboxData,userData,isLeftOpen} = this.state;
         return (
             <div>
-            <LeftNavBar userData = {userData} ifLeftOpen = {isLeftOpen}/>
+            <LeftNavBar userData = {userData} isLeftOpen = {isLeftOpen}/>
             <div className = {isLeftOpen ? "frame-right" : "frame-orgin"}>
-                <TopNavBar  isLeftOpen clickButtonCallBack={()=>this.clickButton()}/>
+                <TopNavBar  isLeftOpen = {isLeftOpen} clickButtonCallBack={()=>this.clickButton()}/>
                 <InboxList  inboxData = {inboxData} isLeftOpen = {isLeftOpen}/>
             </div>
             

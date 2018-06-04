@@ -91,7 +91,7 @@ body {
 .frame-right{
     transition: 0.25s;
     transform: scale(0.98,0.98);
-    margin-left:20%
+    margin-left:200px
     
 }
 
@@ -104,12 +104,215 @@ body {
 .nav-right{
     background-color: #405e73;
     width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+  
+    position: fixed;
     transition: 0.25s;
 
 }
 
 .nav-origin{
     background-color: #405e73;
-    width: 20%;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
     transition: 0.25s;
 }
+
+
+/* all left-nav styles */
+.bounce{
+    position: static;
+}
+
+@keyframes user-animation{
+    0%{
+        margin-top: 25px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 50px;
+        opacity: 1;
+    }
+}
+
+.user-icon {
+    margin-left: 50px;
+    animation-delay: 0.25;
+    animation:user-animation 1s linear;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  
+}
+.user-origin{
+    margin-left: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.user-icon img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.user-origin img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+@keyframes contact-animation{
+    0%{
+        margin-top: 75px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 100px;
+        opacity: 1;
+    }
+}
+
+.contact-icon {
+    margin-left: 50px;
+    animation-delay: 0.35;
+    animation:contact-animation 1s linear;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    border: 2px white solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.contact-origin {
+    margin-left: 50px;
+    margin-top: 100px;
+    border: 2px white solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@keyframes start-animation{
+    0%{
+        margin-top: 25px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 50px;
+        opacity: 1;
+    }
+}
+
+.start-icon {
+    margin-left: 50px;
+    animation-delay: 0.40;
+    animation:start-animation 1s linear;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    border: 2px white solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.start-origin {
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 2px white solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@keyframes message-animation{
+    0%{
+        margin-top: 0px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 50px;
+        opacity: 1;
+    }
+}
+
+
+.message-icon {
+    margin-left: 50px;
+    animation-delay: 0.45;
+    animation:start-animation 1s linear;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    border: 2px white solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
+
+.message-origin {
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 2px white solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@keyframes setting-animation{
+    0%{
+        margin-top: 0px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 100px;
+        opacity: 1;
+    }
+}
+
+
+.setting-icon {
+    margin-left: 50px;
+    animation-delay: 0.55;
+    animation:setting-animation 1s linear;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    border: 2px white solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
+.setting-origin {
+    margin-left: 50px;
+    margin-top: 100px;
+    border: 2px white solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+ 
+
+
+
+
+
+
